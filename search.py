@@ -1,12 +1,12 @@
-from langchain.vectorstores import FAISS
-from langchain.embeddings import HuggingFaceEmbeddings
-from langchain.schema import Document
+from langchain_community.vectorstores import FAISS
+from langchain_community.embeddings import HuggingFaceEmbeddings
 
 # Initialize embeddings
 embedding_model = HuggingFaceEmbeddings(
     model_name="sentence-transformers/all-MiniLM-L6-v2")
 # Load vector store
-vectorstore = FAISS.load_local("product_vectorstore", embedding_model)
+vectorstore = FAISS.load_local(
+    "product_vectorstore", embedding_model, allow_dangerous_deserialization=True)
 
 # User input
 query = "iphone 16"

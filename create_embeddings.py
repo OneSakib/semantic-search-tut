@@ -1,5 +1,5 @@
-from langchain.vectorstores import FAISS
-from langchain.embeddings import HuggingFaceEmbeddings
+from langchain_community.vectorstores import FAISS
+from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain.schema import Document
 
 # Initialize embeddings
@@ -18,6 +18,60 @@ products = [
         "price": "$899",
         "id": "prod_002"
     },
+    {
+        "title": "Google Pixel 8",
+        "description": "Latest Google phone with AI features",
+        "price": "$799",
+        "id": "prod_003"
+    },
+    {
+        "title": "OnePlus 11",
+        "description": "High-performance phone with fast charging",
+        "price": "$749",
+        "id": "prod_004"
+    },
+    {
+        "title": "Sony Xperia 1 V",
+        "description": "Premium phone with excellent camera",
+        "price": "$1099",
+        "id": "prod_005"
+    },
+    {
+        "title": "Xiaomi 13 Pro",
+        "description": "Flagship phone with powerful specs",
+        "price": "$899",
+        "id": "prod_006"
+    },
+    {
+        "title": "Oppo Find X6 Pro",
+        "description": "Innovative phone with unique design",
+        "price": "$999",
+        "id": "prod_007"
+    },
+    {
+        "title": "Vivo X90 Pro",
+        "description": "High-end phone with advanced features",
+        "price": "$899",
+        "id": "prod_008"
+    },
+    {
+        "title": "Motorola Edge 40 Pro",
+        "description": "Flagship phone with great performance",
+        "price": "$799",
+        "id": "prod_009"
+    },
+    {
+        "title": "Asus Zenfone 10",
+        "description": "Compact phone with powerful hardware",
+        "price": "$699",
+        "id": "prod_010"
+    },
+    {
+        "title": "Realme GT 2 Pro",
+        "description": "Affordable flagship with great specs",
+        "price": "$749",
+        "id": "prod_011"
+    }
 ]
 
 

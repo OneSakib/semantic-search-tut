@@ -1,5 +1,6 @@
 from langchain.vectorstores import FAISS
 from langchain.chains import RetrievalQA
+from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain.llms import OpenAI  # or ChatOpenAI
 
 
